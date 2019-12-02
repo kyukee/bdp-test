@@ -1,0 +1,71 @@
+commit ab06192be4394e94e818b02d7d5614169e202a31
+Author: puscasi1 <iulian.puscasu@aalto.fi>
+Date:   Thu Nov 28 12:46:10 2019 +0200
+
+    provisional final version
+
+commit 0ece6c065f0f3e20a2eaabba72f152b0d6b9e6ee
+Author: puscasi1 <iulian.puscasu@aalto.fi>
+Date:   Thu Nov 28 11:30:26 2019 +0200
+
+    all report questions answered. still needs work
+
+commit 1ead6830a1352c1b836d63cf0135c589cb3af8ad
+Author: puscasi1 <iulian.puscasu@aalto.fi>
+Date:   Sun Nov 24 20:55:44 2019 +0200
+
+    report progress
+
+commit bb53c6fc55ad3b7d43f9ddb802a2e204fd47f0e9
+Author: puscasi1 <iulian.puscasu@aalto.fi>
+Date:   Sun Nov 24 20:23:48 2019 +0200
+
+    Report part 1 complete
+
+commit 9948790f5e89f89f93f1a288e9e437e24edcd464
+Author: puscasi1 <iulian.puscasu@aalto.fi>
+Date:   Fri Nov 22 20:46:50 2019 +0200
+
+    add more documentation. progress on report
+
+commit 32699b40d367c1a63ea5157107e246e4c6528b80
+Author: puscasi1 <iulian.puscasu@aalto.fi>
+Date:   Fri Nov 22 18:44:28 2019 +0200
+
+    tidy up the code directory. that includes comments and folder structure.
+
+commit 6ad3d4ce3313d18d809c1299a54413d20f9b3f0b
+Author: puscasi1 <iulian.puscasu@aalto.fi>
+Date:   Fri Nov 22 17:43:12 2019 +0200
+
+    all the code is in working condition
+
+commit ab096267511e4407f959c7d54ad74ee08279746b
+Author: puscasi1 <iulian.puscasu@aalto.fi>
+Date:   Fri Nov 22 15:08:09 2019 +0200
+
+    nodejs with kafka-node and io-sockets shows data from kafka topic
+
+commit 6f5f173e3e99418827311cf93f96b1bd70654f39
+Author: puscasi1 <iulian.puscasu@aalto.fi>
+Date:   Thu Nov 21 22:42:21 2019 +0200
+
+    have some working code using ksql
+
+commit 809b11065fa58c24254a9648a4dc4e9196f24f3c
+Author: puscasi1 <iulian.puscasu@aalto.fi>
+Date:   Thu Nov 21 11:28:35 2019 +0200
+
+    start working on the code
+
+commit 1149b00e21ea8c87346f3a7d5fa186e5df2eb622
+Author: puscasi1 <iulian.puscasu@aalto.fi>
+Date:   Mon Nov 18 18:27:17 2019 +0200
+
+    assignment started
+
+commit 58ee0842a80851c53d3814660ad6401622f5f63c
+Author: Puscasu Iulian <iulian.puscasu@aalto.fi>
+Date:   Mon Nov 18 18:02:53 2019 +0200
+
+    Initial commit

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Node-js Kafka topic visualization</title>
+  <style>
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .speech-bubble {
+        position: relative;
+        background: #ddddff;
+        border-radius: .4em;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .speech-bubble:after {
+        content: '';
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border: 20px solid transparent;
+        border-right-color: #ddddff;
+        border-left: 0;
+        border-bottom: 0;
+        margin-top: -10px;
+        margin-left: -20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Most popular rooms of the day</h2>
+  <div id='main'>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+  $(function(){
+
+    const socket = io({
+        transports: ['websocket']
+    });
+
+    socket.on('kafka update', (data) => {
+
+      // remove all previous data (in case the page is refreshed)
+      $("#main").empty();
+
+      // sort rooms by descending order of visits
+      function compare_room_visits( a, b ) {
+        return (a.visits < b.visits) ? 1 : -1 ;
+      }
+
+      // convert the received object/map into a list of objects
+      rooms_ordered_by_visits = [];
+      Object.keys(data).forEach(x => {
+        rooms_ordered_by_visits.push({room: x, visits: data[x]});
+      });
+
+      rooms_ordered_by_visits.sort( compare_room_visits );
+
+      // create html div's for all the objects
+      for (var obj of rooms_ordered_by_visits) {
+        var bubble = $("<div>", {
+          'class': "speech-bubble",
+        });
+        bubble.append(obj.room + " visits today: " + obj.visits);
+        $('#main').append(bubble);
+      }
+
+    });
+  });
+  </script>
+</body>
+</html>
